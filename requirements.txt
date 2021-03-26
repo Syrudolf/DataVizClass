@@ -5,5 +5,7 @@ requests
 dash_renderer
 dash-html-components
 dash-core-components
+dash_bootstrap_components
 pandas
 numpy
+Output, Input
