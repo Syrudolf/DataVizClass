@@ -8,4 +8,3 @@ dash-core-components
 dash_bootstrap_components
 pandas
 numpy
-Output, Input
