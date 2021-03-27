@@ -6,12 +6,12 @@ import plotly.express as px
 import dash_bootstrap_components as dbc
 import pandas as pd
 
-data = pd.read_csv('OxCGRT_latest.csv',dtype={'CountryCode':'string', 'RegionName':'string', 'RegionCode':'string'})
+data = pd.read_csv("OxCGRT_latest.csv",dtype={'CountryCode':'string', 'RegionName':'string', 'RegionCode':'string','Date':'string'})
 data.loc[:,'Date'] = pd.to_datetime(data.Date, format='%Y-%m-%d')
 print(data.Date.max())
 
 app = dash.Dash(
-    __name__, 
+    __name__,  
     external_stylesheets=[dbc.themes.LITERA], 
     meta_tags=[
         {'name':'viewport',
